@@ -1,0 +1,369 @@
+/*PARA EL BOTON DE JS*/
+
+/* Modo claro (por defecto) */
+body {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PARA EL MENU INICIAL..*/
+
+/* Estilos generales */
+body {
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de navegación */
+.navv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2e8d38;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#theme-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #2e8d38;
+    }
+
+    #theme-toggle {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*PARA EL FOOTER*/
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgb(69, 151, 100);
+    color: white;
+    position: relative;  /* para permitir que crezca con contenido */
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  /* Sombra para darle un poco de profundidad */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Espacio entre los iconos */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;  /* Tamaño más pequeño para los iconos */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);  /* Agrandar iconos al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .social-icons img {
+        width: 30px;  /* Tamaño reducido para pantallas pequeñas */
+        height: 30px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+/*PARA LAS TARJETAS DEL MENU, PAGINA INICIAL*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /*controla la alineacion de los elementos*/
+    padding: 20px;
+}
+
+
+.tarjeta {
+  /*  font-family: "IBM Plex Sans Condensed", sans-serif;*/
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-style: normal;
+    max-width: 300px;
+    /*anchura maxima*/
+    margin: 20px;
+    /*margen*/
+    padding: 20px;
+    /*relleno*/
+    border-radius: 15px;
+    /* Bordes redondeados */
+    background-color: #dfe2c9;
+    /* Color de fondo */
+    /*sombra utilizada de https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.tarjeta img {
+    width: 100%;
+    /*ancho*/
+}
+
+.tarjeta h3 {
+    color: cadetblue;
+}
+
+.tarjeta p {
+    font-size: 16px;
+    /*tamaño de fuente*/
+    color: #000000;
+    line-height: 1.5;
+    /*altura de la linea*/
+}
+
+/*Poniendo las tarjetas horizontales*/
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-around;
+   
+
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*CONTACTOS*/
+/*TARJETA DE CONOCENOS*/
+.conocenos {
+
+    font-family: 'Shadows Into Light', cursive;
+    max-width: 1500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(241, 230, 25, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+/*ENCUESTA*/
+.encuesta {
+
+    font-family: 'Shadows Into Light', cursive;
+    max-width: 1500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(241, 230, 25, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+
+.encuesta h3 { color: #FF6347; /* Cambia el color del h3 (puedes usar el color que prefieras) */ 
+} 
+.encuesta p { color: #4682B4; /* Cambia el color del párrafo (puedes usar el color que prefieras) */ 
+}
+
+
+/*CAMBIANDO LOS COLORES DE LA SECCION DE MENU PARA LOS PARRAFOS Y TITULOS*/
+.cafe h3 {color: #c0c923; }
+.cafe p {color: #2e8d38;}
+.postres h3 {color: #c0c923; }
+.postres p {color: #2e8d38;}
+.comida h3 {color: #c0c923; }
+.comida p {color: #2e8d38;}
+
+/*CAMBIANDO LOS COLORES DE LA SECCION DE UBICACION PARA LOS PARRAFOS*/
+.ubi p {color: #46be2c;}
+
+/*CAMBIANDO LOS COLORES DE LA SECCION DE CONOCENOS PARA LOS TITULOS Y PARRAFOS*/
+.conocenos h2 {color: #c0c923;}
+.conocenos h3 {color: #c0c923;}
+.conocenos p {color: #329330;}
+.conocenos li {color: #329330;}
+
+
+
+
+
+
+/*PARA LAS LETRAS*/
+
+h1 {
+    color: #e29c10;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+button {
+    color: #e29c10;
+}
+
+
+.conocenos {
+
+    font-family: 'Shadows Into Light', cursive;
+    max-width: 1500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(241, 230, 25, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.ubi{
+
+    font-family: 'Shadows Into Light', cursive;
+    max-width: 1500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(241, 230, 25, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*PARA LA PAGINA DEL MENU*/
+
+/* Estilos generales */
+.postres, .cafe, .comida {
+    padding: 20px;
+    display: flex;
+    gap: 60px; /* Aumentamos el espacio entre tarjetas */
+    flex-wrap: wrap;
+}
+
+.tarjeta0, .tarjeta1, .tarjeta2, .tarjeta4, .tarjeta5, .tarjeta6, .tarjeta7, .tarjeta8 {
+    width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Espacio extra alrededor de cada tarjeta */
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contenedor2-tarjetas, .contenedor3-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
